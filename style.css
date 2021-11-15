@@ -1,0 +1,101 @@
+body {
+    	margin: 0;
+        background-color: black;
+        text-align: center;
+        color: rgba(180, 5, 8, 0.884);
+}
+input[type="search"] { 
+   display: inline-block;
+   margin-bottom: 50px;
+   margin-top: 20px;
+    }
+
+    input[type="submit"] { 
+      font-family: "Font Awesome 5 Free"; 
+    font-size: 19px;
+    font-weight: 900;
+    margin-bottom: 50px;
+   margin-top: 20px;
+   display: inline-block;
+   color: rgba(180, 5, 8, 0.884);
+   background-color: black;
+   border-radius: 7px;
+   border-color: rgba(180, 5, 8, 0.884);
+   border-style:inherit;
+    }
+.gps {
+  display: inline-block;
+  background-color: black;
+   border-radius: 7px;
+  
+  border-color: rgba(180, 5, 8, 0.884);
+  border-style: hidden;
+  
+  color:rgba(180, 5, 8, 0.884);
+  
+   
+}
+
+.fa-map-marker-alt{
+  color: rgba(180, 5, 8, 0.884); 
+  font-size: 20px;
+  
+}
+    .today
+{background-color: black;
+width: 480px;
+height: 200px;
+display: block;
+margin: auto;
+position: static;
+}
+h1, h2, h3 {color:rgba(180, 5, 8, 0.884);
+
+}
+h1 {font-size: 30px;
+display: inline-block;}
+h2 {margin-top: 30px;
+font-size: 25px;}
+h3 {font-size: 20px;
+text-transform: capitalize;}
+h4 {font-size: 20px;}
+p {color: rgba(180, 5, 8, 0.884);
+font-size: 14px;
+margin-top: 25px;
+margin-bottom: 4px;}
+.days {font-size: 20px;
+font-weight: 460;}
+
+.fa-cloud-showers-heavy, .fa-cloud-sun {font-size: 30px;
+padding-top: 20px;
+padding-bottom: 13px;}
+
+.minmax {font-size: 16px;}
+img {
+    width: 480px;
+    height: 100px;
+    margin-top: 30px;
+    margin-left: -12px;
+    
+
+}
+.forecasts
+{background-color: black;
+
+margin-top: 10px;
+margin-left: -10px;
+width: 480px;
+height: 270px;
+position: fixed;
+}
+
+
+
+.col {
+text-align: center;}
+
+.fa-cloud {font-size: 100px;
+padding-top: 20px;
+padding-left: 10px;
+padding-right: 10px;
+color: rgba(180, 5, 8, 0.884);}
