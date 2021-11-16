@@ -113,3 +113,8 @@ padding-top: 20px;
 padding-left: 10px;
 padding-right: 10px;
 color: rgba(180, 5, 8, 0.884);}
+
+#icon {
+ width: 100px;
+ height: 100px
+}
