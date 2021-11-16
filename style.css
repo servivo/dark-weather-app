@@ -6,7 +6,7 @@ body {
 }
 input[type="search"] { 
    display: inline-block;
-   margin-bottom: 50px;
+   margin-bottom: 20px;
    margin-top: 20px;
     }
 
@@ -14,7 +14,7 @@ input[type="search"] {
       font-family: "Font Awesome 5 Free"; 
     font-size: 19px;
     font-weight: 900;
-    margin-bottom: 50px;
+    margin-bottom: 8px;
    margin-top: 20px;
    display: inline-block;
    color: rgba(180, 5, 8, 0.884);
@@ -27,19 +27,27 @@ input[type="search"] {
   display: inline-block;
   background-color: black;
    border-radius: 7px;
-  
+  margin-left: -85px;
+  margin-bottom: 10px;
   border-color: rgba(180, 5, 8, 0.884);
   border-style: hidden;
-  
+  font-size: 18px;
   color:rgba(180, 5, 8, 0.884);
   
    
+}
+
+.fas fa-long-arrow-alt-up {
+  margin-right: 20px;
 }
 
 .fa-map-marker-alt{
   color: rgba(180, 5, 8, 0.884); 
   font-size: 20px;
   
+}
+#extras {
+  margin-top: 7px;
 }
     .today
 {background-color: black;
@@ -53,7 +61,8 @@ h1, h2, h3 {color:rgba(180, 5, 8, 0.884);
 
 }
 h1 {font-size: 30px;
-display: inline-block;}
+margin-left: -85px;
+margin-bottom: -13px;}
 h2 {margin-top: 30px;
 font-size: 25px;}
 h3 {font-size: 20px;
@@ -65,8 +74,8 @@ margin-top: 25px;
 margin-bottom: 4px;}
 a {color:rgba(180, 5, 8, 0.884); }
 .opensource {
-  margin-top: 20px;
-  font-size: smaller;
+  margin-top: 35px;
+  font-size: 10px;
 }
 .days {font-size: 20px;
 font-weight: 460;}
