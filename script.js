@@ -131,12 +131,7 @@ function getCurrentPosition(event) {
   navigator.geolocation.getCurrentPosition(showPosition);
 }
 
-var options = {
-  types: ["(cities)"],
-};
 
-var input = document.getElementById("searching");
-var autocomplete = new google.maps.places.Autocomplete(input, options);
 
 let button = document.querySelector(".gps");
 button.addEventListener("click", getCurrentPosition);
