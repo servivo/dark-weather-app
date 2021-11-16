@@ -36,6 +36,9 @@ class for each line of the result
 	font-family: Arial, Helvetica, sans-serif;
 }
 
+.pac-icon {
+  color: rgba(180, 5, 8, 0.884);
+}
     input[type="submit"] { 
       font-family: "Font Awesome 5 Free"; 
     font-size: 19px;
