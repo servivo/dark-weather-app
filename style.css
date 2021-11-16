@@ -20,6 +20,10 @@ input[type="search"] {
 
 }
 
+.pac-item: {
+      color: #4a494e;
+      background-color: #d9d9d9;
+}
     input[type="submit"] { 
       font-family: "Font Awesome 5 Free"; 
     font-size: 19px;
