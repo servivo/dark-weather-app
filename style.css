@@ -10,6 +10,16 @@ input[type="search"] {
    margin-top: 20px;
     }
 
+    input[type="text"], textarea {
+
+  background-color :  #d9d9d9;
+  
+  color: #4a494e;
+
+
+
+}
+
     input[type="submit"] { 
       font-family: "Font Awesome 5 Free"; 
     font-size: 19px;
