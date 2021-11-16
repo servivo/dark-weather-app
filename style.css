@@ -31,9 +31,9 @@ The div that holds all the lines
 class for each line of the result
 */
 .pac-item {
-	font-size: 12px;
+	
 	color: #4a494e;
-	font-family: Arial, Helvetica, sans-serif;
+
 }
 
 .pac-icon {
