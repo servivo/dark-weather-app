@@ -35,7 +35,9 @@ class for each line of the result
 	color: #4a494e;
 
 }
-
+.pac-item:hover {
+    background-color: rgba(180, 5, 8, 0.884);
+    
 .pac-icon {
   color: rgba(180, 5, 8, 0.884);
   background-image: url(https://maps.gstatic.com/mapfiles/api-3/images/autocomplete-icons.png);
