@@ -54,7 +54,7 @@ class for each line of the result
     background-color: rgba(180, 5, 8, 0.884);
    } 
 .pac-icon {
-  background-color: rgba(180, 5, 8, 0.884);
+  color: rgba(180, 5, 8, 0.884);
   background-image: url(https://maps.gstatic.com/mapfiles/api-3/images/autocomplete-icons.png);
 }
     input[type="submit"] { 
