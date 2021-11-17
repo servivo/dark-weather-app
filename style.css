@@ -38,6 +38,7 @@ class for each line of the result
 
 .pac-icon {
   color: rgba(180, 5, 8, 0.884);
+  background-image: url(https://maps.gstatic.com/mapfiles/api-3/images/autocomplete-icons.png);
 }
     input[type="submit"] { 
       font-family: "Font Awesome 5 Free"; 
