@@ -55,14 +55,7 @@ class for each line of the result
    } 
 .pac-icon {
   color: rgba(180, 5, 8, 0.884);
-  width: 18px;
-  height: 21px;
-  margin-right: 0px;
-  margin-top: 0px;
-  display: inline-block;
-  vertical-align: top;
-  background-image: url(https://www.geocodezip.net/images/autocomplete-icon-red.png);
-  background-size: 20px;
+  background-image: url(https://maps.gstatic.com/mapfiles/api-3/images/autocomplete-icons.png);
 }
     input[type="submit"] { 
       font-family: "Font Awesome 5 Free"; 
