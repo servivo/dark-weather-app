@@ -93,6 +93,13 @@ class for each line of the result
   font-size: 20px;
   
 }
+
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+  color: #000;
+}
+
 #extras {
   margin-top: 7px;
 }
@@ -133,7 +140,7 @@ a:hover{
   color: #d9d9d9;
 }
 .opensource {
-  margin-top: 35px;
+  margin-top: 290px;
   font-size: 10px;
 }
 .days {font-size: 20px;

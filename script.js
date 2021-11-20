@@ -151,17 +151,42 @@ temperatureElement.innerHTML = Math.round(fahrenheitTemperature); }
   
   
 
-let button = document.querySelector(".gps");
-button.addEventListener("click", getCurrentPosition);
+    function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
 
+  let days = ["Thu", "Fri", "Sat", "Sun"];
 
-let celsiusTemperature = null;
+  let forecastHTML = `<div class="row">`;
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+      <div class="col"><span class="days">${day}</span> </br>
+        <i class="fas fa-cloud-showers-heavy"></i> </br>
+    <span class="minmax"><i class="fas fa-long-arrow-alt-up"></i> 15°C </br>
+    <i class="fas fa-long-arrow-alt-down"></i> 11°C</span></div>
+  `;
+  });
 
-let form = document.querySelector("form");
-form.addEventListener("submit", hola);
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+  console.log(forecastHTML);
+}
+  
 
-let fahrenheitLink = document.querySelector("#fahrenheit-link");
-fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
+    let button = document.querySelector(".gps");
+    button.addEventListener("click", getCurrentPosition);
 
-let celsiusLink = document.querySelector("#celsius-link");
-celsiusLink.addEventListener("click", displayCelsiusTemperature);
+    let celsiusTemperature = null;
+
+    let form = document.querySelector("form");
+    form.addEventListener("submit", hola);
+
+    let fahrenheitLink = document.querySelector("#fahrenheit-link");
+    fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
+
+    let celsiusLink = document.querySelector("#celsius-link");
+    celsiusLink.addEventListener("click", displayCelsiusTemperature);
+
+    displayForecast();
+  
