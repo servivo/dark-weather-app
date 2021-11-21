@@ -1,5 +1,87 @@
+let now = new Date();
+let h4 = document.querySelector("h4");
 
+let days = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+  "Sunday",
+];
+let day = days[now.getDay()];
+let hours = now.getHours();
+if (hours < 10) {
+  hours = `0${hours}`;
+}
 
+let digits = [
+  "00",
+  "01",
+  "02",
+  "03",
+  "04",
+  "05",
+  "06",
+  "07",
+  "08",
+  "09",
+  "10",
+  "11",
+  "12",
+  "13",
+  "14",
+  "15",
+  "16",
+  "17",
+  "18",
+  "19",
+  "20",
+  "21",
+  "22",
+  "23",
+  "24",
+  "25",
+  "26",
+  "27",
+  "28",
+  "29",
+  "30",
+  "31",
+  "32",
+  "33",
+  "34",
+  "35",
+  "36",
+  "37",
+  "38",
+  "39",
+  "40",
+  "41",
+  "42",
+  "43",
+  "44",
+  "45",
+  "46",
+  "47",
+  "48",
+  "49",
+  "50",
+  "51",
+  "52",
+  "53",
+  "54",
+  "55",
+  "56",
+  "57",
+  "58",
+  "59",
+];
+let minutes = digits[now.getMinutes()];
+
+h4.innerHTML = `${day} ${hours}:${minutes}`;
 
 function formatDate(timestamp) {
   let date = new Date(timestamp);
@@ -22,9 +104,7 @@ function formatDate(timestamp) {
     "Saturday",
   ];
   let day = days[date.getDay()];
- 
-  
-h4.innerHTML = `${day} ${hours}:${minutes}`;
+  return `${day} ${hours}:${minutes}`;
 }
 
 function formatDay(timestamp) {
@@ -118,8 +198,9 @@ temperatureElement.innerHTML = Math.round(fahrenheitTemperature); }
       forecastHTML =
         forecastHTML +
         `
-      <div class="col"><span class="days"> ${formatDay(forecastDay.dt)}</span> </br>
-      
+      <div class="col"><span class="days"> ${formatDay(
+        forecastDay.dt
+      )}</span> </br>
      
       
     <span class="minmax"><i class="fas fa-long-arrow-alt-up"></i> 
