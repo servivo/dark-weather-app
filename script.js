@@ -188,9 +188,8 @@ temperatureElement.innerHTML = Math.round(fahrenheitTemperature); }
 
     function displayForecast(response) {
       let forecast = response.data.daily;
-  let forecastElement = document.querySelector("#forecast");
 
-  let days = ["Thu", "Fri", "Sat", "Sun"];
+      let forecastElement = document.querySelector("#forecast");
 
   let forecastHTML = `<div class="row">`;
   days.forEach(function (forecastDay, index) {
@@ -219,7 +218,9 @@ temperatureElement.innerHTML = Math.round(fahrenheitTemperature); }
     
      let apiKey = "69982519efffa6111d051d52031f9519";
      let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
-     axios.get(apiUrl).then(displayForecast);
+     axios.get(apiUrl).then((response) => {
+       displayForecast(response)
+     });
    }
 
     let button = document.querySelector(".gps");
