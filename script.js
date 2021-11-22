@@ -201,7 +201,7 @@ temperatureElement.innerHTML = Math.round(fahrenheitTemperature); }
         forecastDay.dt
       )}</span> </br>
       <img
-          src="http://openweathermap.org/img/wn/${
+          src="https://openweathermap.org/img/wn/${
             forecastDay.weather[0].icon
           }@2x.png"
           alt=""
