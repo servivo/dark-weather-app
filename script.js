@@ -246,4 +246,4 @@ temperatureElement.innerHTML = Math.round(fahrenheitTemperature); }
     let celsiusLink = document.querySelector("#celsius-link");
     celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
-  search("New York");
+  search("Düsseldorf");
