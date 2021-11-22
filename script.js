@@ -200,11 +200,21 @@ temperatureElement.innerHTML = Math.round(fahrenheitTemperature); }
       <div class="col"><span class="days"> ${formatDay(
         forecastDay.dt
       )}</span> </br>
-     
+      <img
+          src="http://openweathermap.org/img/wn/${
+            forecastDay.weather[0].icon
+          }@2x.png"
+          alt=""
+          width="53"
+        /> </br>
       
-    <span class="minmax"><i class="fas fa-long-arrow-alt-up"></i> 
+    <span class="minmax"><i class="fas fa-long-arrow-alt-up"></i> ${Math.round(
+      forecastDay.temp.max
+    )}°
       </br>
-    <i class="fas fa-long-arrow-alt-down"></i>  </span></div>
+    <i class="fas fa-long-arrow-alt-down"></i> ${Math.round(
+      forecastDay.temp.min
+    )}° </span></div>
   `;
         }
       });
