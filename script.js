@@ -191,12 +191,12 @@ temperatureElement.innerHTML = Math.round(fahrenheitTemperature); }
 
       let forecastElement = document.querySelector("#forecast");
 
-  let forecastHTML = `<div class="row">`;
-  days.forEach(function (forecastDay, index) {
-    if (index < 4) {
-      forecastHTML =
-        forecastHTML +
-        `
+      let forecastHTML = `<div class="row">`;
+      forecast.forEach(function (forecastDay, index) {
+        if (index < 4) {
+          forecastHTML =
+            forecastHTML +
+            `
       <div class="col"><span class="days"> ${formatDay(
         forecastDay.dt
       )}</span> </br>
@@ -206,13 +206,12 @@ temperatureElement.innerHTML = Math.round(fahrenheitTemperature); }
       </br>
     <i class="fas fa-long-arrow-alt-down"></i>  </span></div>
   `;
-    }
-  });
+        }
+      });
 
-  forecastHTML = forecastHTML + `</div>`;
-  forecastElement.innerHTML = forecastHTML;
- 
-}
+      forecastHTML = forecastHTML + `</div>`;
+      forecastElement.innerHTML = forecastHTML;
+    }
 
    function getForecast(coordinates) {
     
@@ -229,7 +228,7 @@ temperatureElement.innerHTML = Math.round(fahrenheitTemperature); }
     let celsiusTemperature = null;
 
     let form = document.querySelector("form");
-    form.addEventListener("submit", search);
+    form.addEventListener("submit", handleSubmit);
 
     let fahrenheitLink = document.querySelector("#fahrenheit-link");
     fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
